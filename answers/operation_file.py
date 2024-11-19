@@ -9,7 +9,7 @@ try:
     # Checking if the output file already has content
     try:
         with open("output.txt", "r") as file:
-            # Strip to remove leading/trailing whitespace
+            # Stripping to remove leading/trailing whitespace
             existing_content = file.read().strip()
     except FileNotFoundError:
         existing_content = ""  # If file doesn't exist, assume it's empty
